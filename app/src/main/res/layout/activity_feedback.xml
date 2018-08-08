@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="15dp"
+    tools:context=".FeedbackActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_feedback"
+        android:layout_marginTop="20dp"
+        android:hint="@string/write_your_feedback" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ch_feedback"
+        android:layout_below="@+id/et_feedback"
+        android:text="@string/include_system_logs"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:buttonTint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_feed1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ch_feedback"
+        android:text="@string/your_feedback"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_feed2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ch_feedback"
+        android:layout_marginLeft="110dp"
+        android:text="@string/system_information"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_feed3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ch_feedback"
+        android:layout_marginLeft="245dp"
+        android:text="@string/and_email"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_feed4"
+        android:layout_below="@id/et_feed3"
+        android:text="@string/address_will_be_sent_to_ted_see_ted_s"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_feed5"
+        android:layout_below="@id/et_feed4"
+        android:text="privacy policy."
+        tools:ignore="HardcodedText"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

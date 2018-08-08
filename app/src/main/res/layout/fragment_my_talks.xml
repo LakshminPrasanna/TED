@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/transparent"
+        android:id="@+id/layout_login">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_acc"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/mytalks"
+            android:layout_marginRight="300dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fst"
+            android:layout_marginLeft="80dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"
+            android:text="@string/log_in_to_your_ted_account"
+            android:textColor="@color/darkblack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_scnd"
+            android:layout_below="@+id/tv_fst"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/sync_my_list_and_history" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/btn_sndlog"
+            android:text="LOG IN"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="270dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout-second"
+        android:layout_below="@+id/layout_login">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:layout_marginRight="300dp"
+            android:layout_marginTop="22dp"
+            android:id="@+id/img_list"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_list"
+            android:layout_marginLeft="80dp"
+            android:textSize="17dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/my_list"
+            android:textColor="@color/darkblack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_list2"
+            android:layout_below="@+id/tv_list"
+            android:layout_marginLeft="80dp"
+            android:textSize="13dp"
+            android:text="@string/no_talks" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_list"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            android:layout_marginRight="300dp"
+            android:id="@+id/img_fav"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_like"
+            android:layout_marginLeft="80dp"
+            android:textSize="17dp"
+            android:layout_below="@+id/tv_list2"
+            android:layout_marginTop="15dp"
+            android:text="@string/likes"
+            android:textColor="@color/darkblack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_like2"
+            android:layout_below="@+id/tv_like"
+            android:layout_marginLeft="80dp"
+            android:textSize="13dp"
+            android:text="@string/no_talks" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/ic_file_download_black_24dp"
+            android:layout_below="@id/img_fav"
+            android:layout_marginRight="300dp"
+            android:id="@+id/img_down"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fav"
+            android:layout_marginLeft="80dp"
+            android:textSize="17dp"
+            android:layout_below="@id/tv_like2"
+            android:layout_marginTop="15dp"
+            android:text="@string/downloads"
+            android:textColor="@color/darkblack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fav2"
+            android:layout_below="@+id/tv_fav"
+            android:layout_marginLeft="80dp"
+            android:textSize="13dp"
+            android:text="@string/no_talks" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/ic_access_alarms_black_24dp"
+            android:layout_below="@id/img_down"
+            android:layout_marginRight="300dp"
+            android:id="@+id/img_clock"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_hist"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/tv_fav2"
+            android:textSize="17dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/history"
+            android:textColor="@color/darkblack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_hist2"
+            android:layout_below="@+id/tv_hist"
+            android:layout_marginLeft="80dp"
+            android:textSize="13dp"
+            android:text="@string/no_talks" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

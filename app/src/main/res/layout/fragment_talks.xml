@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+    <Button
+            android:id="@+id/btn_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/newest"/>
+
+        <Button
+            android:id="@+id/btn_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="@string/ted_talks_india"/>
+        <Button
+            android:id="@+id/btn_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Trending"/>
+        <Button
+            android:id="@+id/btn_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="@string/most_viewed"/>
+        <Button
+            android:id="@+id/btn_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Hidden gems"/>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginBottom="90dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:scrollbars="none"
+    tools:context=".SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_main">
+
+        <RelativeLayout
+            style="@style/layout_search"
+            android:id="@+id/layout_recomend">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_recomend"
+                android:text="@string/recommended_topics"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_local_offer_black_24dp"
+                android:id="@+id/search_rec_img1"
+                android:layout_below="@+id/tv_recomend"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rec1"
+                android:text="@string/politics"
+                android:textSize="18dp"
+                android:textColor="@color/textblack"
+                android:layout_below="@id/tv_recomend"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_local_offer_black_24dp"
+                android:id="@+id/search_rec_img2"
+                android:layout_below="@+id/tv_rec1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_rec2"
+                android:text="@string/business"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_rec1"
+                style="@style/text_search"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_local_offer_black_24dp"
+                android:id="@+id/search_rec_img3"
+                android:layout_below="@+id/search_rec_img2"
+                android:layout_marginRight="300dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_rec3"
+                android:text="@string/psychology"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_rec2"
+                style="@style/text_search"/>
+
+            <TextView
+                android:id="@+id/tv_recomend2"
+                android:text="@string/show_all_topics"
+                android:textStyle="bold"
+                android:layout_below="@id/search_rec_img3"
+                android:textColor="@color/colorPrimaryDark"
+                style="@style/text_search"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/layout_recomend"
+            android:id="@+id/layout_recomend_speakers"
+            style="@style/layout_search">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_speak"
+                android:text="@string/recommended_speakers"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lens_black_24dp"
+                android:id="@+id/speak_img1"
+                android:layout_below="@+id/tv_speak"
+                android:layout_marginRight="300dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_speak1"
+                android:text="@string/joseph_redmon"
+                android:textSize="18dp"
+                android:textColor="@color/textblack"
+                android:layout_below="@id/tv_speak"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lens_black_24dp"
+                android:id="@+id/speak_img2"
+                android:layout_below="@+id/speak_img1"
+                android:layout_marginRight="300dp"
+                android:layout_marginLeft="25dp" />
+
+            <TextView
+                android:id="@+id/tv_speak2"
+                android:text="@string/daniel_schnitzer"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_speak1"
+                style="@style/text_search"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lens_black_24dp"
+                android:id="@+id/speak_img3"
+                android:layout_below="@+id/speak_img2"
+                android:layout_marginRight="300dp"
+                android:layout_marginLeft="25dp" />
+
+            <TextView
+                android:id="@+id/tv_speak3"
+                android:text="@string/ananda_shankar_jayant"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_speak2"
+                style="@style/text_search"/>
+
+            <TextView
+                android:id="@+id/tv_speaker"
+                android:text="@string/show_all_speakers"
+                android:textStyle="bold"
+                android:layout_below="@id/speak_img3"
+                android:textColor="@color/colorPrimaryDark"
+                style="@style/text_search"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_sub_lang"
+            android:layout_below="@id/layout_recomend_speakers"
+            style="@style/layout_search">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_sublang"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/recommended_subtitle_languages"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_language_black_24dp"
+                android:id="@+id/lang_img"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/tv_sublang"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_lang1"
+                android:text="@string/french"
+                android:textSize="18dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/textblack"
+                android:layout_below="@id/tv_sublang"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_langnum1"
+                android:text="@string/_0"
+                android:textSize="18dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/textblack"
+                android:layout_below="@id/tv_sublang"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_language_black_24dp"
+                android:id="@+id/lang_img2"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/lang_img"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_lang2"
+                android:text="@string/malayalam"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_lang1"
+                style="@style/text_search"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_langnum2"
+                android:text="@string/_01"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/darkblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_lang1"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_language_black_24dp"
+                android:id="@+id/lang_img3"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/lang_img2"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_lag3"
+                android:text="@string/vietnamese"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_lang2"
+                style="@style/text_search"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_lagnum3"
+                android:text="@string/_02"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@id/tv_lang2"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_sublang1"
+                android:text="@string/show_all_subtitle_languages"
+                android:textStyle="bold"
+                android:layout_below="@id/lang_img3"
+                android:textColor="@color/colorPrimaryDark"
+                style="@style/text_search"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_events"
+            style="@style/layout_search"
+            android:layout_below="@id/layout_sub_lang">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_events"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/recommended_events"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_event_black_24dp"
+                android:id="@+id/event_img"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/tv_events"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_event1"
+                android:text="@string/ted2016"
+                android:textSize="18dp"
+                android:textColor="@color/textblack"
+                android:layout_below="@id/tv_events"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_event_black_24dp"
+                android:id="@+id/event_img2"
+                android:layout_below="@+id/event_img"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_event2"
+                android:text="@string/ted2015"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_event1"
+                style="@style/text_search"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_event_black_24dp"
+                android:id="@+id/event_img3"
+                android:layout_below="@+id/event_img2"
+                android:layout_marginRight="300dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_event3"
+                android:text="@string/ted2014"
+                android:textColor="@color/textblack"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_event2"
+                style="@style/text_search"/>
+
+            <TextView
+                android:id="@+id/tv_eventsa1"
+                android:text="@string/show_all_events"
+                android:textStyle="bold"
+                android:layout_below="@id/event_img3"
+                android:textColor="@color/colorPrimaryDark"
+                style="@style/text_search"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

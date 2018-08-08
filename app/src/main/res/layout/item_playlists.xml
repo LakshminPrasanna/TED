@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/image"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="7dp"
+        android:scaleType="centerCrop" />
+
+    <include layout="@layout/text_playlist_items"/>
+
+</RelativeLayout>
